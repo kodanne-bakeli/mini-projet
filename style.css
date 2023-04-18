@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Taviraj:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+body {
+    font-family: 'Taviraj', serif !important;
+
+}
+#navbar-brand{
+    font-family: 'Lobster', cursive !important;
+}
+#top {
+    background: url(images/head3.jpeg) no-repeat center;
+}
+
+#popular #bissap:hover:after,
+#popular #ananas:hover:after {
+    content: "+";
+    font-size: 50px;
+    color: white;
+    background-color: rgba(255, 219, 13, 0.918) !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-main form{
+    background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%),
+    url(images/cocktail.jpeg) no-repeat center/100%;
+    font-family: 'Lobster Two', cursive;
+    
+}
+@media screen and (max-width:500px){
+    #login-form img{
+        display: none;
+    }
+}
