@@ -6,9 +6,11 @@ body {
     font-family: 'Taviraj', serif !important;
 
 }
-#navbar-brand{
+
+#navbar-brand {
     font-family: 'Lobster', cursive !important;
 }
+
 #top {
     background: url(images/head3.jpeg) no-repeat center;
 }
@@ -28,14 +30,48 @@ body {
     justify-content: center;
     align-items: center;
 }
-#login-main form{
+
+#login-main form {
     background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%),
-    url(images/cocktail.jpeg) no-repeat center/100%;
+        url(images/cocktail.jpeg) no-repeat center/100%;
     font-family: 'Lobster Two', cursive;
-    
+
 }
-@media screen and (max-width:500px){
-    #login-form img{
+
+#signin-main form {
+    background: linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), url(images/soda.jpeg) no-repeat center/100%;
+    font-family: 'Lobster Two', cursive;
+}
+
+h1 {
+    font-size: 24px !important;
+}
+
+h2 {
+    font-size: 34px !important;
+}
+
+@media screen and (max-width:500px) {
+    #login-form img {
         display: none;
+    }
+
+    h1 {
+        font-size: 18px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 16px !important;
+    }
+
+    h4 {
+        font-size: 14px !important;
+    }
+    #signin-main form{
+        background: none;
     }
 }
