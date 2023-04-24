@@ -10,7 +10,9 @@ body {
 #navbar-brand {
     font-family: 'Lobster', cursive !important;
 }
-
+input{
+    outline: none;
+}
 #top {
     background: url(images/head3.jpeg) no-repeat center;
 }
