@@ -10,16 +10,22 @@ body {
 #navbar-brand {
     font-family: 'Lobster', cursive !important;
 }
-input{
+
+input,#login-form input,#signin-form input{
     outline: none;
+    box-shadow: none;
 }
 #top {
     background: url(images/head3.jpeg) no-repeat center;
 }
-
-#popular #bissap:hover:after,
-#popular #ananas:hover:after {
-    content: "+";
+#popular #bissap .btn-primary,
+#popular #ananas .btn-primary{
+    display: none;
+}
+#popular #bissap:hover .btn-primary,
+#popular #ananas:hover .btn-primary{
+    border: none;
+    box-shadow: none;
     font-size: 50px;
     color: white;
     background-color: rgba(255, 219, 13, 0.918) !important;
@@ -32,19 +38,28 @@ input{
     justify-content: center;
     align-items: center;
 }
-
-#login-main form {
-    background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%),
-        url(images/cocktail.jpeg) no-repeat center/100%;
+#body-products{
+    background:linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(2, 2, 2, 0.3) 100%),
+     url(images/juice.jpg) no-repeat center fixed;
+    background-size: 100% 100%;
+}
+#login-main {
+    background: url(images/head5.jpg) no-repeat center;
+    background-size: cover;
     font-family: 'Lobster Two', cursive;
-
+    
 }
 
-#signin-main form {
-    background: linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), url(images/soda.jpeg) no-repeat center/100%;
+#signin-body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(2, 2, 2, 0.3) 100%),
+    url(images/juice2.jpg) no-repeat center fixed;
+     background-size: cover;
     font-family: 'Lobster Two', cursive;
 }
-
+#contact-body{
+    background: url(images/contact.jpg) no-repeat center;
+    background-size: cover;
+}
 h1 {
     font-size: 24px !important;
 }
@@ -52,12 +67,18 @@ h1 {
 h2 {
     font-size: 34px !important;
 }
-
-@media screen and (max-width:500px) {
-    #login-form img {
-        display: none;
+@media screen and (max-width:700px){
+    
+    #login-main, #login-form{
+        width: 100% !important;
     }
-
+    
+    #login-form{
+        background: transparent !important;
+        backdrop-filter: blur(10px);
+    }
+}
+@media screen and (max-width:500px) {
     h1 {
         font-size: 18px !important;
     }
@@ -73,7 +94,8 @@ h2 {
     h4 {
         font-size: 14px !important;
     }
-    #signin-main form{
+    #signin-main form, #login-main{
         background: none;
     }
+    
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body id="body-login">
+<body id="contact-body">
     <header class="sticky-top bg-white">
         <nav class="navbar navbar-expand-lg shadow">
             <div class="container-fluid">
@@ -26,7 +26,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item"><a href="index.html" class="nav-link text-dark">ACCUEIL</a></li>
                             <li class="nav-item"><a href="products.html" class="nav-link text-dark">PRODUCTS</a></li>
-                            <li class="nav-item"><a href="#contact.html" class="nav-link text-dark">CONTACT-US</a></li>
+                            <li class="nav-item"><a href="#contact.html" class="nav-link text-warning">CONTACT-US</a></li>
                             <li class="nav-item"><a href="connexion.html"
                                     class="nav-link btn btn-warning text-white rounded-pill mx-3 mb-2">LOG
                                     IN</a></li>
@@ -50,53 +50,32 @@
             </div>
         </nav>
     </header>
-    
-    <main class=" mt-5 p-4 w-75 mx-auto" id="login-main">
-        <form class="w-50 bg-transparent px-5" id="login-form">
-            <h2 class="text-center py-3">LOG IN</h2>
-            <div class="mb-3">
-                <label for="Email1" class="form-label">Email address</label>
-                <input type="email" class="form-control bg-transparent border-0 border-bottom border-dark" id="Email1">
+
+    <main class=" mt-5 py-5" id="contact-main">
+        <form class="w-50 ms-5  py-5 px-3" id="contact-form">
+            <h2 class="text-center text-light py-4">CONTACT-US</h2>
+            <div class="row py-5">
+                <div class=" col-12 col-md">
+                    <div class="mb-3">
+                        
+                        <input type="text" class="form-control py-2" id="name" placeholder="Your Name*">
+                    </div>
+                    <div class="mb-3">
+                        
+                        <input type="email" class="form-control py-2" id="Email1" placeholder="Your Email*">
+                    </div>
+                    <div class="">
+                        
+                        <input type="tel" class="form-control py-2" id="phone" placeholder="Your Phone*">
+                    </div>
+                </div>
+                <div class=" col-12 col-md">
+                    <textarea name="" id="message" class="w-100 h-100 py-2" placeholder="Your Message"></textarea>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="Password1" class="form-label ">Password</label>
-                <input type="password" class="form-control bg-transparent border-0 border-bottom border-dark" id="Password1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input " id="Check1">
-                <label class="form-check-label" for="Check">Remember me</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="conditionsCheck">
-                <label class="form-check-label" for="gridCheck">
-                    I accept the <a href="" class="text-dark">Terms of Use and acknowledge the Privacy Policy and Cookie
-                        Policy</a>
-                </label>
-            <div class="text-center">
-                <button class="btn btn-primary">Log in</button>
-            </div>
-            <div>
-                <p class="text-center py-2">continue with:</p>
-                <div class="d-flex row justify-content-center ">
-                    <p class="col-2 mx-2 text-center">
-                    <a href="" class="text-decoration-none text-dark"><i class="fab fa-2x fa-google text-warning"></i> Google
-                    </a>
-                </p>
-                <p class="col-2 mx-2 text-center ">
-                    <a href="" class="text-decoration-none text-dark"><i class="fab fa-2x fa-facebook-square text-warning"></i> Facebook
-                    </a>
-                
-                </p>
-                <p class="col-2 mx-3 mx-md-2 text-center">
-                    <a href="" class="text-decoration-none text-dark"><i class="fab fa-2x fa-linkedin text-warning"></i> Linkedin
-                </a>
-                </p>
-            </div>
-            </div>
-        <div class="border-top">
-            <p class="py-3 text-center">no account?
-                <a href="register.html" class="text-decoration-none">REGISTER!</a></p>
-        </div>
+            <div class="text-center mt-3">
+                    <button class="btn-primary py-2 px-3">SUBMIT</button>
+                </div>
         </form>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
